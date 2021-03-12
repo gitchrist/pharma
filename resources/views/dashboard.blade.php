@@ -50,7 +50,7 @@
             </div>
             <div class="card-footer">
               <div class="stats">
-                <i class="material-icons">local_offer</i> Tracked from Github
+                <i class="material-icons">local_offer</i> Tracked form Git
               </div>
             </div>
           </div>

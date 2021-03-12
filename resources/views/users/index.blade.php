@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
     <meta charset="utf-8" />
@@ -8,7 +8,7 @@
     <!-- Extra details for Live View on GitHub Pages -->
     <!-- Canonical SEO -->
     <link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard-laravel" />
-
+    <?php $activePage=0; ?>
 
     <!--  Social tags      -->
     <meta name="keywords" content="creative tim, html dashboard, laravel, html css dashboard laravel, web dashboard, bootstrap 4 dashboard laravel, bootstrap 4, css3 dashboard, bootstrap 4 admin laravel, material ui dashboard bootstrap 4 laravel, frontend, responsive bootstrap 4 dashboard, material design, material laravel bootstrap 4 dashboard">
@@ -84,7 +84,7 @@
                 <ul class="nav">
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                      <i class="material-icons">dashboard</i>
+                      <i class="material-icons"> Tableau de Bord</i>
                         <p>{{ __('Dashboard') }}</p>
                     </a>
                   </li>
