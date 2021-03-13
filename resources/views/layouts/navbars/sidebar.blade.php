@@ -5,7 +5,7 @@
       Tip 2: you can also add an image using data-image tag
   -->
   <div class="logo">
-    <a href="https://creative-tim.com/" class="simple-text logo-normal">
+    <a href="#" class="simple-text logo-normal">
       {{ __('Creative Tim') }}
     </a>
   </div>
@@ -13,8 +13,8 @@
     <ul class="nav">
       <li class="nav-item{{ $activePage == 'dashboard' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('home') }}">
-          <i class="material-icons">dashboard</i>
-            <p>{{ __('Dashboard') }}</p>
+          <i class="material-icons">  Tableau de Bord </i>
+            <p>{{ __('Dash') }}</p>
         </a>
       </li>
       <li class="nav-item {{ ($activePage == 'profile' || $activePage == 'user-management') ? ' active' : '' }}">
@@ -28,44 +28,44 @@
           <ul class="nav">
             <li class="nav-item{{ $activePage == 'profile' ? ' active' : '' }}">
               <a class="nav-link" href="{{ route('profile.edit') }}">
-                <span class="sidebar-mini"> UP </span>
-                <span class="sidebar-normal">{{ __('User profile') }} </span>
+                <span class="sidebar-mini"> PU </span>
+                <span class="sidebar-normal">{{ __('Profil Utilisateur ') }} </span>
               </a>
             </li>
             <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
               <a class="nav-link" href="{{ route('user.index') }}">
-                <span class="sidebar-mini"> UM </span>
-                <span class="sidebar-normal"> {{ __('User Management') }} </span>
+                <span class="sidebar-mini"> GU </span>
+                <span class="sidebar-normal"> {{ __('Gestion Utilisateur') }} </span>
               </a>
             </li>
           </ul>
         </div>
       </li>
-      <li class="nav-item{{ $activePage == 'table' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('table') }}">
-          <i class="material-icons">content_paste</i>
-            <p>{{ __('Table List') }}</p>
+      <li class="nav-item{{ $activePage == 'Produits' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('Produits') }}">;
+          <i class="material-icons"> Commandes </i>
+            <p>{{ __('Produits') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'typography' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('typography') }}">
-          <i class="material-icons">library_books</i>
+          <i class="material-icons"> Ventes </i>
             <p>{{ __('Typography') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'icons' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('icons') }}">
-          <i class="material-icons">bubble_chart</i>
+          <i class="material-icons"> Produits </i>
           <p>{{ __('Icons') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'map' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('map') }}">
-          <i class="material-icons">location_ons</i>
+          <i class="material-icons"> Statistiques </i>
             <p>{{ __('Maps') }}</p>
         </a>
       </li>
-      <li class="nav-item{{ $activePage == 'notifications' ? ' active' : '' }}">
+     <!-- <li class="nav-item{{ $activePage == 'notifications' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('notifications') }}">
           <i class="material-icons">notifications</i>
           <p>{{ __('Notifications') }}</p>
@@ -77,7 +77,7 @@
           <p>{{ __('RTL Support') }}</p>
         </a>
       </li>
-      
+       -->
     </ul>
   </div>
 </div>

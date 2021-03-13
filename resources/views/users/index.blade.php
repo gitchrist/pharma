@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+                                                                                                                                                              <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
     <meta charset="utf-8" />
@@ -7,8 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Extra details for Live View on GitHub Pages -->
     <!-- Canonical SEO -->
-    <link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard-laravel" />
-
+   <!-- <link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard-laravel" />
+-->
 
     <!--  Social tags      -->
     <meta name="keywords" content="creative tim, html dashboard, laravel, html css dashboard laravel, web dashboard, bootstrap 4 dashboard laravel, bootstrap 4, css3 dashboard, bootstrap 4 admin laravel, material ui dashboard bootstrap 4 laravel, frontend, responsive bootstrap 4 dashboard, material design, material laravel bootstrap 4 dashboard">
@@ -76,8 +76,8 @@
                   Tip 2: you can also add an image using data-image tag
               -->
               <div class="logo">
-                <a href="https://creative-tim.com/" class="simple-text logo-normal">
-                  {{ __('Creative Tim') }}
+                <a href="#" class="simple-text logo-normal">
+                  {{ __('PHARMA') }}
                 </a>
               </div>
               <div class="sidebar-wrapper">
@@ -99,14 +99,14 @@
                       <ul class="nav">
                         <li class="nav-item">
                           <a class="nav-link" href="{{ route('profile.edit') }}">
-                            <span class="sidebar-mini"> UP </span>
-                            <span class="sidebar-normal">{{ __('User profile') }} </span>
+                            <span class="sidebar-mini"> PU </span>
+                            <span class="sidebar-normal">{{ __('Profile Utilisateur ') }} </span>
                           </a>
                         </li>
                         <li class="nav-item active">
                           <a class="nav-link" href="{{ route('user.index') }}">
-                            <span class="sidebar-mini"> UM </span>
-                            <span class="sidebar-normal"> {{ __('User Management') }} </span>
+                            <span class="sidebar-mini"> GU </span>
+                            <span class="sidebar-normal"> {{ __('Gestion des utilisateurs') }} </span >
                           </a>
                         </li>
                       </ul>
@@ -148,12 +148,14 @@
                       <p>{{ __('RTL Support') }}</p>
                     </a>
                   </li>
+                  <?php  $activePage = 0;   ?>
+<!--
                   <li class="nav-item active-pro{{ $activePage == 'upgrade' ? ' active' : '' }}">
                     <a class="nav-link text-white bg-danger" href="{{ route('upgrade') }}">
                       <i class="material-icons text-white">unarchive</i>
                       <p>{{ __('Upgrade to PRO') }}</p>
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -231,13 +233,13 @@
       <div class="col-md-12">
           <div class="card">
             <div class="card-header card-header-primary">
-              <h4 class="card-title ">Users</h4>
-              <p class="card-category"> Here you can manage users</p>
+              <h4 class="card-title "> Utilisateurs </h4>
+              <p class="card-category"> Comment gérer les utilisateurs </p>
             </div>
             <div class="card-body">
                               <div class="row">
                 <div class="col-12 text-right">
-                  <a href="#" class="btn btn-sm btn-primary">Add user</a>
+                  <a href="#" class="btn btn-sm btn-primary"> Ajouter Utilisateur</a>
                 </div>
               </div>
               <div class="table-responsive">
@@ -279,10 +281,7 @@
               </div>
             </div>
           </div>
-          <div class="alert alert-danger">
-            <span style="font-size:18px;">
-              <b> </b> This is a PRO feature!</span>
-          </div>
+          
       </div>
     </div>
   </div>
@@ -380,11 +379,7 @@
                 View Documentation
               </a>
             </li>
-            <li class="button-container">
-              <a href="https://www.creative-tim.com/product/material-dashboard-pro-laravel" target="_blank" class="btn btn-danger btn-block btn-round">
-                Upgrade to PRO
-              </a>
-            </li>
+            
             <li class="button-container github-star">
               <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard-laravel" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
             </li>

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'table', 'titlePage' => __('Table List')])
+@extends('layouts.app', ['activePage' => 'table', 'titlePage' => __('Produits')])
 
 @section('content')
 <div class="content">
@@ -7,8 +7,9 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header card-header-primary">
-            <h4 class="card-title ">Simple Table</h4>
-            <p class="card-category"> Here is a subtitle for this table</p>
+            <h4 class="card-title ">Espace bébé</h4>
+            <input type="submit"  class="form-btn" value="Ajouter">
+            <p class="card-category"> Les produits pour bébé </p>
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -18,16 +19,19 @@
                     ID
                   </th>
                   <th>
-                    Name
+                    Libelle
                   </th>
                   <th>
-                    Country
+                    Dosage
                   </th>
                   <th>
-                    City
+                    Quantite
                   </th>
                   <th>
-                    Salary
+                    Fabricant
+                  </th>
+                  <th>
+                    Prix Unitaire
                   </th>
                 </thead>
                 <tbody>
